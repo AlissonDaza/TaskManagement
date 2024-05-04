@@ -1,0 +1,27 @@
+.card {
+    perspective: 1000px;
+    transition: transform 0.5s, box-shadow 0.5s;
+    border-radius: 0.25rem;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .card:hover {
+    box-shadow: 0 10px 30px rgba(0, 0, 255, 0.5);
+  }
+  
+  .card-inner {
+    position: relative;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+  }
+
+  .card-shadow {
+    box-shadow: 0px 10px 30px rgba(0, 0, 255, 0.5);
+  }
+  
+  
+  .card:hover .card-inner {
+    transform: rotateY(var(--rotateY)) rotateX(var(--rotateX));
+  }
+  
